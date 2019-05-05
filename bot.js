@@ -2,17 +2,11 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
-module.exports.run = async (bot, message, args) => {
-
-      if(!message.member.hasPermission("ADMINISTRATOR")) return;
-      const sayMessage = args.join(" ");
-      message.delete().catch();
-      message.channel.send(sayMessage);
-
-}
-
-module.exports.help = {
-  name: "say"
+if (command === 'say') {
+    let say = args.join(' ');
+    msg.delete();
+    if(!msg.member.permissions.has('ADMINISTRATION') ) return msg.reply('**YOU CANT USE THIS COMMAND !')
+    msg.channel.send(say);
 }
 
 client.login("NTU1NzE1ODA3NjExNDUzNDQy.XM4p6A.FmkFB7_bEgGGgUbuDuhGoMZ9YA4");
