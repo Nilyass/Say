@@ -10,7 +10,7 @@ client.on('message', message => {
          message.delete()
          const embed = new Discord.RichEmbed()
          .setDescription(args.join(" "))
-         .setColor(RANDOM)
+         .setColor("RANDOM")
     message.channel.sendEmbed(embed);
  
      }
