@@ -136,4 +136,4 @@ client.on("message", async message => {
 
 client.login(config.token);
 
-client.login("BOT_TOKEN");
+client.login("NTYwODkyODI0NzYxOTI1NjMy.XNLiOg.DFGK-BVgqiViKXYAhFoURE9mEL0");
